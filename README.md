@@ -13,7 +13,7 @@ A simple quiz application built with **React.js** and **IndexedDB** to store qui
 ##  Installation & Setup
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yash095desh/Interactive-Quiz-Platform.git
+   git clone https://github.com/yash095desh/Interactive-Quiz-Platform-.git
    ```
 2. Navigate to the project folder:
    ```sh
