@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import questions from "../data/questions.json";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -8,6 +9,7 @@ const Quiz = () => {
   const [score, setScore] = useState(0);
   const [timeLeft, setTimeLeft] = useState(30);
   const [showAns, setShowAns] = useState(false);
+  const navigate = useNavigate()
 
   // Timer countdown effect
   useEffect(() => {
@@ -38,7 +40,7 @@ const Quiz = () => {
       setSelectedOption("");
       setTimeLeft(30);
     } else {
-      window.location.href = "/result";
+      navigate("/result")
     }
   };
 
